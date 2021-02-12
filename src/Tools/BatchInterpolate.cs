@@ -61,9 +61,12 @@ namespace CaitSith.Tools
                         lstProgress.TopIndex = lstProgress.Items.Count - 1;
                         lstProgress.Refresh();
 
-                        DataManipulation.parse(inFile, ref data);
-                        DataManipulation.interpolate(ref data);
-                        DataManipulation.dump(txtOutPath.Text + "\\" + inFile.Name, ref data);
+                        await Task.Run(() =>
+                        {
+                            DataManipulation.parse(inFile, ref data);
+                            DataManipulation.interpolate(ref data);
+                            DataManipulation.dump(txtOutPath.Text + "\\" + inFile.Name, ref data);
+                        });
 
                         data = null;
                     }
