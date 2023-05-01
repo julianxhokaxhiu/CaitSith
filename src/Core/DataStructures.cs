@@ -1,5 +1,5 @@
 ﻿/***************************************************************************
-*    Copyright (C) 2021 Julian Xhokaxhiu                                   *
+*    Copyright (C) 2023 Julian Xhokaxhiu                                   *
 *                                                                          *
 *    This file is part of CaitSith                                         *
 *                                                                          *
